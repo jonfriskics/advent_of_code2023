@@ -1008,11 +1008,8 @@ star2 = 0
 
 # star 1
 for line in input.strip().split("\n"):
-  # print(line)
-
   num_str = ''
   for c in line:
-    # print(c)
     if c.isdigit():
       num_str = num_str + c
   num_str = num_str[0] + num_str[-1]
@@ -1042,7 +1039,7 @@ def word_found(s):
 
 # star 2
 for line in input.strip().split("\n"):
-  new_str = ""
+  new_str = ''
   for pos in range(len(line)):
     if line[pos:][0].isdigit():
       new_str += str(line[pos:][0])
